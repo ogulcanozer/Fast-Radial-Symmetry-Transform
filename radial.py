@@ -26,7 +26,7 @@ def grad(image):
     return grad_x, grad_y
 
 
-def radial(image, radius, alpha=3, beta=0.2, std=0.5):
+def frst(image, radius, alpha=2, beta=0.2, std=0.5):
     # Get image gradients.
     grad_y, grad_x = grad(image)
     row = grad_x.shape[0]
